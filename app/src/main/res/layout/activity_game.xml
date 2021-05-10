@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#BE8CF6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:contentDescription="@string/back_button_description"
+            android:minWidth="10dip"
+            android:src="@drawable/arrow_left" />
+
+        <ImageButton
+            android:id="@+id/music_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@string/music_button_description" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:id="@+id/game_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/Fruit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/Fruit5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/Fruit9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit10"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/Fruit13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit14"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/Fruit17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+
+            <ImageButton
+                android:id="@+id/Fruit20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/tile_description"
+                android:visibility="invisible"
+                android:clickable="false"
+                app:srcCompat="@drawable/box" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:padding="24dp"
+            android:text="@string/initial_score"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/end_game_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/end_game" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/new_game_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/new_game" />
+
+            <Button
+                android:id="@+id/try_again_button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/try_again" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

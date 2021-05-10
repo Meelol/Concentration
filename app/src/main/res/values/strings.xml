@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Concentration</string>
+    <string name="title">Pjam\'s Concentration</string>
+    <string name="logo_description">Group\'s logo</string>
+    <string name="prompt_to_user">Number of tiles(even number): </string>
+    <string name="max_tiles">(4-20)</string>
+    <string name="play_button">Play</string>
+    <string name="greater_than_4_toast">Please enter a number greater than 4.</string>
+    <string name="even_number_toast">Please enter an even number.</string>
+    <string name="less_than_20_toast">Please enter a number less than 20. </string>
+    <string name="invalid_input_toast">Invalid input!</string>
+    <string name="music_button_description">Stop/Resume music</string>
+    <string name="tile_description">Fruits</string>
+    <string name="back_button_description">Goes back to main screen</string>
+    <string name="end_game">End Game</string>
+    <string name="try_again">Try Again</string>
+    <string name="new_game">New Game</string>
+    <string name="initial_score">Score: 0</string>
+    <string name="highscores">Highscores</string>
+    <string name="four_cards">4-card game</string>
+    <string name="six_cards">6-card game</string>
+    <string name="eight_cards">8-card game</string>
+    <string name="ten_cards">10-card game</string>
+    <string name="twelve_cards">12-card game</string>
+    <string name="fourteen_cards">14-card game</string>
+    <string name="sixteen_cards">16-card game</string>
+    <string name="eighteen_cards">18-card game</string>
+    <string name="twenty_cards">20-card game</string>
+</resources>
