@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import kotlin.random.Random
 
+const val FINAL_SCORE = "com.example.concentration.FINAL_SCORE"
 class GameActivity : AppCompatActivity() {
 
     //ViewModel
@@ -99,6 +100,15 @@ class GameActivity : AppCompatActivity() {
             startActivity(intent)
         }
         endGameButton.setOnClickListener {
+            val songTimeStamp = concentrationViewModel.getSongTimeStamp()
+            val numOfTiles = concentrationViewModel.getNumOfTiles()
+            val finalScore = concentrationViewModel.getScore()
+            val intent = Intent(this, ScoreActivity::class.java).apply{
+                putExtra(SONG_TIME_STAMP, songTimeStamp)
+                putExtra(NUM_TILES, numOfTiles)
+                putExtra(FINAL_SCORE, finalScore)
+            }
+            startActivity(intent)
         }
         newGameButton.setOnClickListener {
             concentrationViewModel.setScore(0)

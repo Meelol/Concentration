@@ -26,4 +26,5 @@
     <string name="sixteen_cards">16-card game</string>
     <string name="eighteen_cards">18-card game</string>
     <string name="twenty_cards">20-card game</string>
+    <string name="enter_initals">Initials: </string>
 </resources>

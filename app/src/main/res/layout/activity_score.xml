@@ -1,91 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BE8CF6"
     android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/arrow_left" />
+
+        <ImageButton
+            android:id="@+id/music_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:contentDescription="@string/music_button_description" />
+    </FrameLayout>
 
     <TextView
         android:id="@+id/high_scores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center_horizontal"
-        android:text="@string/highscores" />
+        android:text="@string/highscores"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp"
+        android:fontFamily="casual"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/list_scores"
+    <TextView
+        android:id="@+id/game_type"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|center_vertical">
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
 
-        <EditText
-            android:id="@+id/highscore1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/highscore2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/highscore3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/highscore4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/highscore5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
-    </androidx.recyclerview.widget.RecyclerView>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|center_horizontal"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/game_type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="bottom"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/input_prompt_score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/user_initials"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/score3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/score4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/score5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/score6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/score7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+                android:id="@+id/score8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/input_prompt_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|start"
+                android:fontFamily="casual"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="40sp"
+                tools:text="@string/enter_initals" />
+
+            <EditText
+                android:id="@+id/user_initials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|end"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+    </FrameLayout>
 
 </LinearLayout>

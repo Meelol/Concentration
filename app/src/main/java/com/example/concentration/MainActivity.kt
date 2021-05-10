@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
         playButton = findViewById(R.id.play_button)
         musicButton = findViewById(R.id.music_button)
-        musicButton.setBackgroundResource(R.drawable.audio)
+        musicButton.setImageResource(R.drawable.audio)
         userInputText = findViewById(R.id.number_of_tiles)
 
         val songTimeStamp = intent.getIntExtra(SONG_TIME_STAMP,0)
